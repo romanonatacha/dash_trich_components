@@ -1,0 +1,7 @@
+include dash_trich_components/dash_trich_components.min.js
+include dash_trich_components/dash_trich_components.min.js.map
+include dash_trich_components/metadata.json
+include dash_trich_components/package-info.json
+include README.md
+include LICENSE
+include package.json
