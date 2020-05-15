@@ -1,6 +1,6 @@
 {
   "src/lib/components/Carousel/Carousel.react.js": {
-    "description": "",
+    "description": "ECarousel is an carousel component.\nIt takes some setting properties\nYou put how many blocks of divs you want inside it,\nand this div turn into slides",
     "displayName": "Carousel",
     "methods": [],
     "props": {
@@ -9,98 +9,98 @@
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "Dots under carousel"
       },
       "arrows": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "Arrows to control carousel"
       },
       "infinite": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "If the carousel content will repeat in a loop"
       },
       "autoplay": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "If the carousel will start to play automatically"
       },
       "speed": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": ""
+        "description": "Speed of autoplay"
       },
       "slidesToShow": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": ""
+        "description": "How many slides you want to show"
       },
       "slidesToScroll": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": ""
+        "description": "How many slides will scroll when you swipe the carousel"
       },
       "centerMode": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "To centralize the carousel"
       },
       "centerPadding": {
         "type": {
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "Padding on the sides"
       },
       "swipeToSlide": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "If you can slide to scroll the slides"
       },
       "variableWidth": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "The slides width varies according to the screen size"
       },
       "responsive": {
         "type": {
           "name": "array"
         },
         "required": false,
-        "description": ""
+        "description": "Settings of breakpoints"
       },
       "vertical": {
         "type": {
           "name": "bool"
         },
         "required": false,
-        "description": ""
+        "description": "If your carousel is vertical"
       },
       "children": {
         "type": {
           "name": "node"
         },
         "required": false,
-        "description": ""
+        "description": "Your carousel is vertical"
       }
     }
   }

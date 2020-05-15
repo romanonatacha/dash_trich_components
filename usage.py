@@ -40,7 +40,7 @@ app = dash.Dash(__name__)
 app.layout = html.Div([
     dtc.Carousel(
         content,
-        dots=True,
+        dots=False,
         arrows=True,
         infinite=True,
         speed=500,

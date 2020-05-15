@@ -11,7 +11,7 @@ $slick-loader-path: "~slick-carousel/slick/";
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             content: '\f053';
-            color: black;
+            color: #232323;
         }
     }
     .slick-next {
@@ -19,7 +19,17 @@ $slick-loader-path: "~slick-carousel/slick/";
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             content: '\f054';
-            color: black;
+            color: #232323;
+        }
+    }
+
+    .slick-dots {
+        button {
+            color: unset;
+            &:before {
+                font-size: 28px;
+                color: #232323;
+            }
         }
     }
 }
