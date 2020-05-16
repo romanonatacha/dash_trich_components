@@ -1,4 +1,6 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 export(Carousel)
+export(ThemeToggle)
+export(themeToggle)
 export(carousel)

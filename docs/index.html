@@ -5,24 +5,27 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dash Trich Components Documentation</title>
+  <title>dash trich Components documentation</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="scribbler-global.css">
   <link rel="stylesheet" href="scribbler-doc.css">
   <link rel="author" href="humans.txt">
-  <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src="https://kit.fontawesome.com/0806b332d0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="doc__bg"></div>
   <nav class="header">
-    <h1 class="logo">Dash Trich Components <span class="logo__thin">Documentation</span></h1>
+    <h1 class="logo">dash trich components <span class="logo__thin">documentation</span></h1>
     <ul class="menu">
       <div class="menu__item toggle"><span></span></div>
       <li class="menu__item"><a href="https://pypi.org/project/dash-trich-components/" target="_blank"
           class="link link--dark"><i class="fab fa-python"></i> Pypi</a></li>
       <li class="menu__item"><a href="https://github.com/romanonatacha/dash_trich_components" target="_blank"
           class="link link--dark"><i class="fab fa-github"></i> Github</a></li>
+      <li class="menu__item"><a
+          href="https://join.slack.com/t/dash-learners/shared_invite/zt-edu12c6t-SNk5owutigiqS4mwkmC75A" target="_blank"
+          class="link link--dark"> <i class="fab fa-slack"></i></i> Slack Community</a></li>
       <li class="menu__item"><a href="https://trich.ai" target="_blank" class="link link--dark"><i
             class="fab fa-tumblr-square"></i> Trich.ai</a>
       </li>
@@ -35,6 +38,7 @@
         <li class="js-btn">Configuration</li>
         <li class="js-btn">Components</li>
         <li class="js-btn subtitle">Carousel</li>
+        <li class="js-btn subtitle">Theme Toggle</li>
         <li class="js-btn">Updating</li>
       </ul>
     </aside>
@@ -73,7 +77,7 @@
         </iframe>
         <table id="customers">
           <tr>
-            <th>Arguments</th>
+            <th>Argument</th>
             <th>Value</th>
             <th>Default</th>
           </tr>
@@ -164,6 +168,83 @@
           src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=responsive%253D%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%25201024%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'infinite'%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'dots'%253A%2520true%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520600%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'initialSlide'%253A%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520480%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%255D"
           style="width:1024px; height:630px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
         </iframe>
+        <hr />
+      </section>
+      <section class="js-section">
+        <h3 class="section__title">Theme Toggle</h3>
+        <p>Dark/Light theme toggle switch for your Dash project.</p>
+        <p>Include the component in your project, and include the color settings in the CSS, following the example
+          below. It's important to follow this step, otherwise the theme toggle component will not work.</p>
+        <p>
+          It is also possible to customize the colors of the toggle switcher with arguments if you like.
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=import%2520dash_trich_components%2520as%2520dtc%250A%250Atheme_toggle%2520%253D%2520dtc.ThemeToggle(%250A%2520%2520%2520%2520%2520%2520%2520%2520bg_color_dark%253D'%2523232323'%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520icon_color_dark%253D'%2523EDC575'%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520bg_color_light%253D'%252307484E'%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520icon_color_light%253D'%2523C8DBDC'%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520tooltip_text%253D'Toggle%2520light%252Fdark%2520theme'%250A%2520%2520%2520%2520)"
+          style="width:1024px; height:300px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <p>Or, if you prefer, you can pass no arguments and use the default values.</p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=import%2520dash_trich_components%2520as%2520dtc%250A%250Atheme_toggle%2520%253D%2520dtc.ThemeToggle()"
+          style=" width:1024px; height:180px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <h4>CSS Settings (Important step, otherwise the component will not work)</h4>
+        <p>Include this settings in your CSS with the colors you want for each theme.</p>
+        <p>
+          First define the colors of your light theme, you can include as many colors as you want, adding more
+          variables.
+        </p>
+        <p>
+          In the second part use the same variables to define the value they will receive when the thema dark will
+          be active.
+        </p>
+        <p>Now, you should use these color variables in all the color properties of your CSS, as in the ecample bellow.
+        </p>
+        <p><i>Don't know how to add a CSS file in you project?<br>
+            You just have to create a folder with the name "assets" at the root of your project, and inside create a
+            file with the extension .css, for example "styles.css".<br>
+            To use this component it is recommended that you have a basic knowledge of CSS.
+          </i></p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=css&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520colors%2520variables%2520settings%2520*%252F%250A%250Ahtml%2520%257B%250A%2509background%253A%2520var(--bgColor)%253B%250A%2509color%253A%2520var(--textDefault)%253B%250A%2520%2520%250A%2520%2520%2520%2520--bgColor%253A%2520%2523fff%253B%250A%2520%2520%2509--textDefault%253A%2520%2523000%250A%2520%2520%2520%2520--primary%253A%2520%25230B4CFF%253B%250A%2520%2520%2520%2520--secondary%253A%2520%2523FF0B70%253B%250A%2520%2520%2520%2520--terciary%253A%2520%252300BA5B%253B%250A%257D%250A%250Ahtml%255Bdata-theme%253D'dark'%255D%2520%257B%250A%2509--bgColor%253A%2520%2523000%253B%250A%2520%2520%2509--textDefault%253A%2520%2523fff%250A%2520%2520%2520%2520--primary%253A%2520%2523ACC2FF%253B%250A%2520%2520%2520%2520--secondary%253A%2520%2523FFAFD0%253B%250A%2520%2520%2520%2520--terciary%253A%2520%252386E1B3%253B%250A%257D"
+          style="width:1024px; height:510px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=css&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520colors%2520variables%2520using%2520examples%2520*%252F%250A%250Ah2%2520%257B%250A%2509color%253A%2520var(--primary)%253B%250A%257D%250A%250A.classNameExample%2520%257B%250A%2509background%253A%2520var(--terciary)%253B%250A%2520%2520%2520%2520border%253A%25201px%2520solid%2520var(--secondary)%253B%250A%257D"
+          style="width:1024px; height:300px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <table id="customers">
+          <tr>
+            <th>Argument</th>
+            <th>Value</th>
+            <th>Default</th>
+          </tr>
+          <tr>
+            <td>bg_color_dark</td>
+            <td>(<b>string</b>, optional): <i>background color of toggle switch when dark theme</i></td>
+            <td>'#232323'</td>
+          </tr>
+          <tr>
+            <td>icon_color_dark</td>
+            <td>(<b>string</b>, optional): <i>sun icon color of toggle switch when dark theme</i></td>
+            <td>'#EDC575'</td>
+          </tr>
+          <tr>
+            <td>bg_color_light</td>
+            <td>(<b>string</b>, optional): <i>background color of toggle switch when light theme</i></td>
+            <td>'#07484E'</td>
+          </tr>
+          <tr>
+            <td>icon_color_light</td>
+            <td>(<b>string</b>, optional): <i>moon icon color of toggle switch when dark theme</i></td>
+            <td>'#C8DBDC'</td>
+          </tr>
+          <tr>
+            <td>tooltip_text</td>
+            <td>(<b>string</b>, optional): <i>text that will appear in tooltip (only desktop)</i></td>
+            <td>'Toggle light/dark theme'</td>
+          </tr>
+        </table>
         <hr />
       </section>
       <section class="js-section">

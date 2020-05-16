@@ -47,8 +47,15 @@ app.layout = html.Div([
         slides_to_show=3,
         slides_to_scroll=1,
         responsive=responsive,
+    ),
+    dtc.ThemeToggle(
+        bg_color_dark='red',
+        icon_color_dark='blue',
+        bg_color_light='pink',
+        icon_color_light='green',
+        tooltip_text='teeext'
     )
-], style={'width': '80%', 'margin': '0 auto'})
+], id="homepage", style={'width': '80%', 'margin': '0 auto'})
 
 
 if __name__ == '__main__':

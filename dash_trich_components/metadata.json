@@ -117,5 +117,60 @@
         "description": "Style class of the component."
       }
     }
+  },
+  "src/lib/components/ThemeToggle/ThemeToggle.react.js": {
+    "description": "",
+    "displayName": "ThemeToggle",
+    "methods": [
+      {
+        "name": "onChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "bg_color_dark": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Background color of toggle switch when dark theme"
+      },
+      "icon_color_dark": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Sun icon color of toggle switch when dark theme"
+      },
+      "bg_color_light": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Background color of toggle switch when light theme"
+      },
+      "icon_color_light": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Moon icon color of toggle switch when dark theme"
+      },
+      "tooltip_text": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text that will appear in tooltip (only desktop)"
+      }
+    }
   }
 }

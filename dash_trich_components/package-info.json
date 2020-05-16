@@ -24,12 +24,16 @@
   "author": "Natacha Romano <natacharomanonr@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "file-loader": "^6.0.0",
     "node-sass": "^4.14.1",
     "ramda": "^0.26.1",
+    "react-bootstrap": "^1.0.1",
+    "react-jss": "^10.1.1",
     "react-slick": "^0.26.1",
     "sass-loader": "^8.0.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
