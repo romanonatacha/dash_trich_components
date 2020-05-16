@@ -1,7 +1,8 @@
 # dash-trich-components
 
-To use the Dash Trich Coponents library, read the [Documentation](https://romanonatacha.github.io/dash_trich_components/) here.
-https://romanonatacha.github.io/dash_trich_components/
+To use the Dash Trich Coponents library, read the [documentation](https://romanonatacha.github.io/dash_trich_components/)
+
+Documentation: https://romanonatacha.github.io/dash_trich_components/
 
 dash-trich-components is a Dash component library.
 
