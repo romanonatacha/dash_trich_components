@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dash Trich Components Documentation</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="scribbler-global.css">
   <link rel="stylesheet" href="scribbler-doc.css">
@@ -19,10 +19,12 @@
     <h1 class="logo">Dash Trich Components <span class="logo__thin">Documentation</span></h1>
     <ul class="menu">
       <div class="menu__item toggle"><span></span></div>
+      <li class="menu__item"><a href="https://pypi.org/project/dash-trich-components/" target="_blank"
+          class="link link--dark"><i class="fab fa-python"></i> Pypi</a></li>
       <li class="menu__item"><a href="https://github.com/romanonatacha/dash_trich_components" target="_blank"
-          class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+          class="link link--dark"><i class="fab fa-github"></i> Github</a></li>
       <li class="menu__item"><a href="https://trich.ai" target="_blank" class="link link--dark"><i
-            class="fa fa-tumblr-square"></i> Trich.ai</a>
+            class="fab fa-tumblr-square"></i> Trich.ai</a>
       </li>
     </ul>
   </nav>
@@ -33,7 +35,7 @@
         <li class="js-btn">Configuration</li>
         <li class="js-btn">Components</li>
         <li class="js-btn subtitle">Carousel</li>
-        <li class="js-btn">Issues</li>
+        <li class="js-btn">Updating</li>
       </ul>
     </aside>
     <article class="doc__content">
@@ -52,13 +54,10 @@
       <section class="js-section">
         <h3 class="section__title">Configuration</h3>
         <p>Import <b>dash_trich_components</b> on the file that you wnat to use it.</p>
-        <div class="code__block code__block--notabs">
-          <pre class="code code--block">
-              <code>
-                <b>import</b> dash_trich_components <b>as</b> dtc
-              </code>
-            </pre>
-        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=import%2520dash_trich_components%2520as%2520dtc"
+          style="width:1024px; height:100px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
         <hr />
       </section>
       <section class="js-section">
@@ -69,8 +68,8 @@
         <p>A simple carousel for your Dash projects! Add a list of HTML elements inside the component and it turns to
           carousel slides.</p>
         <iframe
-          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=import%2520dash_trich_components%2520as%2520dtc%250Aimport%2520dash_html_components%2520as%2520html%250A%250Acarousel%2520%253D%2520dtc.Carousel(%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509html.Div('slide%25201')%252C%250A%2520%2509%2509%2509html.Div('slide%25202')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25203')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25204')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25205')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25206')%250A%2509%2509%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slides_to_scroll%253D1%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520swipe_to_slide%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520autoplay%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520speed%253D2000%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520variable_width%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520center_mode%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520responsive%253D%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520991%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'arrows'%253A%2520False%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%255D%250A%2509%2509)"
-          style="width:1024px; height:700px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16px&lh=133%25&si=false&es=2x&wm=false&code=import%2520dash_trich_components%2520as%2520dtc%250Aimport%2520dash_html_components%2520as%2520html%250A%250Acarousel%2520%253D%2520dtc.Carousel(%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509html.Div('slide%25201')%252C%250A%2520%2509%2509%2509html.Div('slide%25202')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25203')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25204')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25205')%252C%250A%2520%2520%2509%2509%2509html.Div('slide%25206')%250A%2509%2509%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slides_to_scroll%253D1%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520swipe_to_slide%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520autoplay%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520speed%253D2000%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520variable_width%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520center_mode%253DTrue%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520responsive%253D%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520991%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'arrows'%253A%2520False%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%255D%250A%2509%2509)"
+          style="width:1024px; height:650px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
         </iframe>
         <table id="customers">
           <tr>
@@ -162,8 +161,8 @@
             responsive argument), like in the example bellow.</i>
         </p>
         <iframe
-          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=responsive%253D%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520breakpoint%253A%25201024%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520settings%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slidesToShow%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slidesToScroll%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520infinite%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dots%253A%2520true%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520breakpoint%253A%2520600%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520settings%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slidesToShow%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slidesToScroll%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520initialSlide%253A%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520breakpoint%253A%2520480%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520settings%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slidesToShow%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520slidesToScroll%253A%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%255D"
-          style="width:1024px; height:700px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=responsive%253D%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%25201024%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'infinite'%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'dots'%253A%2520true%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520600%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'initialSlide'%253A%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520480%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%255D"
+          style="width:1024px; height:630px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
         </iframe>
         <hr />
       </section>
