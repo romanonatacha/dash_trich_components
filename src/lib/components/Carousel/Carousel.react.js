@@ -19,14 +19,16 @@ export default class Carousel extends Component {
             infinite,
             autoplay,
             speed,
-            slidesToShow,
-            slidesToScroll,
-            centerMode,
-            centerPadding,
-            swipeToSlide,
-            variableWidth,
+            slides_to_show,
+            slides_to_scroll,
+            center_mode,
+            center_padding,
+            swipe_to_slide,
+            variable_width,
             responsive,
             vertical,
+            className,
+            style,
             children } = this.props
 
         const settings = {
@@ -35,14 +37,16 @@ export default class Carousel extends Component {
             infinite: infinite || true,
             autoplay: autoplay || false,
             speed: speed || 1000,
-            slidesToShow: slidesToShow || 3,
-            slidesToScroll: slidesToScroll || 1,
-            centerMode: centerMode || false,
-            centerPadding: centerPadding || '50px',
-            swipeToSlide: swipeToSlide || true,
-            variableWidth: variableWidth || false,
-            responsive: responsive || [],
+            slidesToShow: slides_to_show || 3,
+            slidesToScroll: slides_to_scroll || 1,
+            centerMode: center_mode || false,
+            centerPadding: center_padding || '50px',
+            swipeToSlide: swipe_to_slide || true,
+            variableWidth: variable_width || false,
+            responsive: responsive || null,
             vertical: vertical || false,
+            className: className || null,
+            style: style || null
         };
 
         return (
@@ -86,32 +90,32 @@ Carousel.propTypes = {
     /**
      * How many slides you want to show
      */
-    slidesToShow: PropTypes.number,
+    slides_to_show: PropTypes.number,
 
     /**
      * How many slides will scroll when you swipe the carousel
      */
-    slidesToScroll: PropTypes.number,
+    slides_to_scroll: PropTypes.number,
 
     /**
      * To centralize the carousel
      */
-    centerMode: PropTypes.bool,
+    center_mode: PropTypes.bool,
 
     /**
      * Padding on the sides
      */
-    centerPadding: PropTypes.string,
+    center_padding: PropTypes.string,
 
     /**
      * If you can slide to scroll the slides
      */
-    swipeToSlide: PropTypes.bool,
+    swipe_to_slide: PropTypes.bool,
 
     /**
      * The slides width varies according to the screen size
      */
-    variableWidth: PropTypes.bool,
+    variable_width: PropTypes.bool,
 
     /**
      * Settings of breakpoints
@@ -126,5 +130,14 @@ Carousel.propTypes = {
     /**
      * Your carousel is vertical
      */
-    children: PropTypes.node
+    children: PropTypes.node,
+
+    /**
+     * Inline style of the component.
+     */
+    style: PropTypes.object,
+    /**
+     * Style class of the component.
+     */
+    className: PropTypes.string,
 };

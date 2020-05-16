@@ -1,6 +1,6 @@
 Package: dashTrichComponents
 Title: Trich.ai components library for Dash Plotly
-Version: 0.0.1
+Version: 0.0.3
 Description: Trich.ai components library for Dash Plotly
 Depends: R (>= 3.0.2)
 Imports: 

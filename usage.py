@@ -44,10 +44,9 @@ app.layout = html.Div([
         arrows=True,
         infinite=True,
         speed=500,
-        slidesToShow=3,
-        slidesToScroll=1,
-        responsive=responsive
-        # variableWidth=True
+        slides_to_show=3,
+        slides_to_scroll=1,
+        responsive=responsive,
     )
 ], style={'width': '80%', 'margin': '0 auto'})
 

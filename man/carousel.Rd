@@ -11,10 +11,11 @@ ECarousel is an carousel component. It takes some setting properties You put how
 
 \usage{
 carousel(children=NULL, dots=NULL, arrows=NULL, infinite=NULL,
-autoplay=NULL, speed=NULL, slidesToShow=NULL,
-slidesToScroll=NULL, centerMode=NULL, centerPadding=NULL,
-swipeToSlide=NULL, variableWidth=NULL, responsive=NULL,
-vertical=NULL)
+autoplay=NULL, speed=NULL, slides_to_show=NULL,
+slides_to_scroll=NULL, center_mode=NULL,
+center_padding=NULL, swipe_to_slide=NULL,
+variable_width=NULL, responsive=NULL, vertical=NULL,
+style=NULL, className=NULL)
 }
 
 \arguments{
@@ -30,21 +31,25 @@ vertical=NULL)
 
 \item{speed}{Numeric. Speed of autoplay}
 
-\item{slidesToShow}{Numeric. How many slides you want to show}
+\item{slides_to_show}{Numeric. How many slides you want to show}
 
-\item{slidesToScroll}{Numeric. How many slides will scroll when you swipe the carousel}
+\item{slides_to_scroll}{Numeric. How many slides will scroll when you swipe the carousel}
 
-\item{centerMode}{Logical. To centralize the carousel}
+\item{center_mode}{Logical. To centralize the carousel}
 
-\item{centerPadding}{Character. Padding on the sides}
+\item{center_padding}{Character. Padding on the sides}
 
-\item{swipeToSlide}{Logical. If you can slide to scroll the slides}
+\item{swipe_to_slide}{Logical. If you can slide to scroll the slides}
 
-\item{variableWidth}{Logical. The slides width varies according to the screen size}
+\item{variable_width}{Logical. The slides width varies according to the screen size}
 
 \item{responsive}{Unnamed list. Settings of breakpoints}
 
 \item{vertical}{Logical. If your carousel is vertical}
+
+\item{style}{Named list. Inline style of the component.}
+
+\item{className}{Character. Style class of the component.}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

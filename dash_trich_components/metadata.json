@@ -39,42 +39,42 @@
         "required": false,
         "description": "Speed of autoplay"
       },
-      "slidesToShow": {
+      "slides_to_show": {
         "type": {
           "name": "number"
         },
         "required": false,
         "description": "How many slides you want to show"
       },
-      "slidesToScroll": {
+      "slides_to_scroll": {
         "type": {
           "name": "number"
         },
         "required": false,
         "description": "How many slides will scroll when you swipe the carousel"
       },
-      "centerMode": {
+      "center_mode": {
         "type": {
           "name": "bool"
         },
         "required": false,
         "description": "To centralize the carousel"
       },
-      "centerPadding": {
+      "center_padding": {
         "type": {
           "name": "string"
         },
         "required": false,
         "description": "Padding on the sides"
       },
-      "swipeToSlide": {
+      "swipe_to_slide": {
         "type": {
           "name": "bool"
         },
         "required": false,
         "description": "If you can slide to scroll the slides"
       },
-      "variableWidth": {
+      "variable_width": {
         "type": {
           "name": "bool"
         },
@@ -101,6 +101,20 @@
         },
         "required": false,
         "description": "Your carousel is vertical"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component."
       }
     }
   }

@@ -17,21 +17,23 @@ Keyword arguments:
 - infinite (boolean; optional): If the carousel content will repeat in a loop
 - autoplay (boolean; optional): If the carousel will start to play automatically
 - speed (number; optional): Speed of autoplay
-- slidesToShow (number; optional): How many slides you want to show
-- slidesToScroll (number; optional): How many slides will scroll when you swipe the carousel
-- centerMode (boolean; optional): To centralize the carousel
-- centerPadding (string; optional): Padding on the sides
-- swipeToSlide (boolean; optional): If you can slide to scroll the slides
-- variableWidth (boolean; optional): The slides width varies according to the screen size
+- slides_to_show (number; optional): How many slides you want to show
+- slides_to_scroll (number; optional): How many slides will scroll when you swipe the carousel
+- center_mode (boolean; optional): To centralize the carousel
+- center_padding (string; optional): Padding on the sides
+- swipe_to_slide (boolean; optional): If you can slide to scroll the slides
+- variable_width (boolean; optional): The slides width varies according to the screen size
 - responsive (list; optional): Settings of breakpoints
-- vertical (boolean; optional): If your carousel is vertical"""
+- vertical (boolean; optional): If your carousel is vertical
+- style (dict; optional): Inline style of the component.
+- className (string; optional): Style class of the component."""
     @_explicitize_args
-    def __init__(self, children=None, dots=Component.UNDEFINED, arrows=Component.UNDEFINED, infinite=Component.UNDEFINED, autoplay=Component.UNDEFINED, speed=Component.UNDEFINED, slidesToShow=Component.UNDEFINED, slidesToScroll=Component.UNDEFINED, centerMode=Component.UNDEFINED, centerPadding=Component.UNDEFINED, swipeToSlide=Component.UNDEFINED, variableWidth=Component.UNDEFINED, responsive=Component.UNDEFINED, vertical=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slidesToShow', 'slidesToScroll', 'centerMode', 'centerPadding', 'swipeToSlide', 'variableWidth', 'responsive', 'vertical']
+    def __init__(self, children=None, dots=Component.UNDEFINED, arrows=Component.UNDEFINED, infinite=Component.UNDEFINED, autoplay=Component.UNDEFINED, speed=Component.UNDEFINED, slides_to_show=Component.UNDEFINED, slides_to_scroll=Component.UNDEFINED, center_mode=Component.UNDEFINED, center_padding=Component.UNDEFINED, swipe_to_slide=Component.UNDEFINED, variable_width=Component.UNDEFINED, responsive=Component.UNDEFINED, vertical=Component.UNDEFINED, style=Component.UNDEFINED, className=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slides_to_show', 'slides_to_scroll', 'center_mode', 'center_padding', 'swipe_to_slide', 'variable_width', 'responsive', 'vertical', 'style', 'className']
         self._type = 'Carousel'
         self._namespace = 'dash_trich_components'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slidesToShow', 'slidesToScroll', 'centerMode', 'centerPadding', 'swipeToSlide', 'variableWidth', 'responsive', 'vertical']
+        self.available_properties = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slides_to_show', 'slides_to_scroll', 'center_mode', 'center_padding', 'swipe_to_slide', 'variable_width', 'responsive', 'vertical', 'style', 'className']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')
