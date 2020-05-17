@@ -58,11 +58,6 @@ html, body {
   line-height: 1.8;
 }
 
-.doc__nav ul.fixed {
-  position: fixed;
-  top: 2rem;
-}
-
 .doc__nav li:hover {
   color: var(--primary-color-light);
   cursor: pointer;
@@ -117,4 +112,9 @@ html, body {
 .subtitle {
   font-size: 0.9rem;
   padding-left: 16px;
+}
+
+.gif-example {
+  width: 800px;
+  margin: 0 auto 32px;
 }
