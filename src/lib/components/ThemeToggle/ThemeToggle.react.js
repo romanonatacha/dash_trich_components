@@ -44,7 +44,7 @@ export default class ThemeToggle extends Component {
         `
 
         return (
-            <div>
+            <div className="themeToggle">
                 <OverlayTrigger placement='bottom' delay={{ show: 1000 }} overlay={
                     <Tooltip id="tooltip-bottom">
                         {tooltip_text || 'Toggle light/dark theme'}
@@ -55,7 +55,7 @@ export default class ThemeToggle extends Component {
                         <Label htmlFor="theme_toggle"></Label>
                     </form>
                 </OverlayTrigger>
-            </div >
+            </div>
 
         );
     }

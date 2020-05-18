@@ -1,46 +1,55 @@
-input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  
-  label {
-    cursor: pointer;
-    width: 55px;
-    height: 30px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    position: relative;
-    margin-top: -8px;
-    
-    &:after {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f186";
-      font-size: 21px;
-      position: absolute;
-      top: 0;
-      left: 4px;
-      -webkit-transition: ease-in-out 200ms;
-      -moz-transition: ease-in-out 200ms;
-      -ms-transition: ease-in-out 200ms;
-      -o-transition: ease-in-out 200ms;
-      transition: ease-in-out 200ms;
+.themeToggle {
+  input[type=checkbox] {
+      height: 0;
+      width: 0;
+      visibility: hidden;
     }
     
-    &:hover:after {
-        font-size: 23px;
-        top: -2px;
+    label {
+      cursor: pointer;
+      width: 55px;
+      height: 30px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      position: relative;
+      margin-top: -8px;
+      
+      &:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f186";
+        font-size: 21px;
+        position: absolute;
+        top: 0;
+        left: 4px;
+        -webkit-transition: ease-in-out 200ms;
+        -moz-transition: ease-in-out 200ms;
+        -ms-transition: ease-in-out 200ms;
+        -o-transition: ease-in-out 200ms;
+        transition: ease-in-out 200ms;
+      }
+      
+      &:hover:after {
+          font-size: 23px;
+          top: -2px;
+      }
     }
-  }
-  
 
-  html[data-theme='dark'] {
+    @media sreen and (max-width: 991px) {
+      #tooltip-bottom {
+          display: none;
+      }
+  }
+
+}
+html[data-theme='dark'] {
+
+  .themeToggle {
     label {
       &:after {
         font-family: "Font Awesome 5 Free";
@@ -59,21 +68,4 @@ input[type=checkbox] {
       }
     }
   }
-
-  html.transition,
-  html.transition *,
-  html.transition *:before,
-  html.transition *:after {
-    -webkit-transition: ease-in-out 200ms !important;
-    -moz-transition: ease-in-out 200ms !important;
-    -ms-transition: ease-in-out 200ms !important;
-    -o-transition: ease-in-out 200ms !important;
-    transition: ease-in-out 200ms !important;
-    transition-delay: 0!important;
-  }
-
-@media sreen and (max-width: 991px) {
-    #tooltip-bottom {
-        display: none;
-    }
 }
