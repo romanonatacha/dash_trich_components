@@ -3,3 +3,25 @@
         vertical-align: middle;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .sidenav---expanded---1KdUL ~ #page_content {
+        margin-left: 240px;
+        transition: 0.5s;
+    }
+    
+    .sidenav---collapsed---LQDEv ~ #page_content {
+        margin-left: 64px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .sidenav---collapsed---LQDEv {
+        background-color: transparent;
+    }
+
+    .sidenav---collapsed---LQDEv .sidenav---sidenav-nav---3tvij {
+        display: none;
+    }
+}

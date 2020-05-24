@@ -1,6 +1,6 @@
 {
   "src/lib/components/Carousel/Carousel.react.js": {
-    "description": "ECarousel is an carousel component.\nIt takes some setting properties\nYou put how many blocks of divs you want inside it,\nand this div turn into slides",
+    "description": "Carousel is an carousel component.\nIt takes some setting properties\nYou put how many blocks of divs you want inside it,\nand this div turn into slides",
     "displayName": "Carousel",
     "methods": [],
     "props": {
@@ -141,17 +141,6 @@
           "computed": false
         }
       },
-      "style": {
-        "type": {
-          "name": "object"
-        },
-        "required": false,
-        "description": "Inline style of the component.",
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        }
-      },
       "className": {
         "type": {
           "name": "string"
@@ -215,6 +204,17 @@
         "description": "Id of the element",
         "defaultValue": {
           "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "''",
           "computed": false
         }
       },

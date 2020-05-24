@@ -26,9 +26,14 @@ p {
   color: #4A4A4A;
 }
 
-a, a:hover {
+a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--accent-color-dark);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 hr {

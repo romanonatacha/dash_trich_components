@@ -9,6 +9,7 @@ class SideBarItem(Component):
 
 Keyword arguments:
 - id (string; optional): Id of the element
+- className (string; default ''): Style class of the component.
 - label (string; optional): Text of menu item on sidebar
 - icon (string; optional): Icon of menu item on sidebar, pass the icon class from font awesome
 - disabled (boolean; default False): Disable the link. Default: False.
@@ -18,12 +19,12 @@ that this element has been clicked on.
 at which n_clicks changed. This can be used to tell
 which button was changed most recently."""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, label=Component.UNDEFINED, icon=Component.UNDEFINED, disabled=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'label', 'icon', 'disabled', 'n_clicks', 'n_clicks_timestamp']
+    def __init__(self, id=Component.UNDEFINED, className=Component.UNDEFINED, label=Component.UNDEFINED, icon=Component.UNDEFINED, disabled=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'className', 'label', 'icon', 'disabled', 'n_clicks', 'n_clicks_timestamp']
         self._type = 'SideBarItem'
         self._namespace = 'dash_trich_components'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'label', 'icon', 'disabled', 'n_clicks', 'n_clicks_timestamp']
+        self.available_properties = ['id', 'className', 'label', 'icon', 'disabled', 'n_clicks', 'n_clicks_timestamp']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

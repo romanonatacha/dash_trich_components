@@ -6,7 +6,7 @@
 \title{Carousel component}
 
 \description{
-ECarousel is an carousel component. It takes some setting properties You put how many blocks of divs you want inside it, and this div turn into slides
+Carousel is an carousel component. It takes some setting properties You put how many blocks of divs you want inside it, and this div turn into slides
 }
 
 \usage{

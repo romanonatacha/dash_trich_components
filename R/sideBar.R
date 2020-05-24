@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-sideBar <- function(children=NULL, id=NULL, style=NULL, className=NULL, bg_color=NULL, text_color=NULL) {
+sideBar <- function(children=NULL, id=NULL, className=NULL, bg_color=NULL, text_color=NULL) {
     
-    props <- list(children=children, id=id, style=style, className=className, bg_color=bg_color, text_color=text_color)
+    props <- list(children=children, id=id, className=className, bg_color=bg_color, text_color=text_color)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ sideBar <- function(children=NULL, id=NULL, style=NULL, className=NULL, bg_color
         props = props,
         type = 'SideBar',
         namespace = 'dash_trich_components',
-        propNames = c('children', 'id', 'style', 'className', 'bg_color', 'text_color'),
+        propNames = c('children', 'id', 'className', 'bg_color', 'text_color'),
         package = 'dashTrichComponents'
         )
 

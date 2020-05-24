@@ -1,6 +1,7 @@
 import React, { Component, Children } from 'react';
 import PropTypes from 'prop-types';
 import SideNav from '@trendmicro/react-sidenav';
+import './SideBar.scss'
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 export default class SideBar extends Component {
@@ -20,8 +21,7 @@ export default class SideBar extends Component {
                 id={id}
                 className={`${className} trich_sidebar`}
                 style={
-                    { 'backgroundColor': bg_color },
-                    { 'color': text_color }
+                    { 'backgroundColor': bg_color, 'color': text_color }
                 }
             >
                 <SideNav.Toggle />
@@ -37,7 +37,6 @@ export default class SideBar extends Component {
 SideBar.defaultProps = {
     id: null,
     className: '',
-    style: null,
     bg_color: 'inherit',
     text_color: 'inherit'
 };
@@ -48,10 +47,6 @@ SideBar.propTypes = {
      */
     id: PropTypes.string,
 
-    /**
-     * Inline style of the component.
-     */
-    style: PropTypes.object,
     /**
      * Style class of the component.
      */

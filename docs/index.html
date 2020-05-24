@@ -38,6 +38,7 @@
         <li class="js-btn">Configuration</li>
         <li class="js-btn">Components</li>
         <li class="js-btn subtitle">Carousel</li>
+        <li class="js-btn subtitle">Side Bar</li>
         <li class="js-btn subtitle">Theme Toggle</li>
         <li class="js-btn">Updating</li>
         <li class="js-btn">Authors</li>
@@ -166,13 +167,104 @@
         <h4>Resposive argument examples</h4>
         <p>Customize based on breakpoints, you have to pass a list of object, with your settings</p>
         <p>
-          <i>PS: You have to use strings and camel case to pass the arguments (only on the
+          <i><b>! </b> You have to use strings and camel case to pass the arguments (only on the
             responsive argument), like in the example bellow.</i>
         </p>
         <iframe
           src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=responsive%253D%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%25201024%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25203%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'infinite'%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'dots'%253A%2520true%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520600%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25202%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'initialSlide'%253A%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'breakpoint'%253A%2520480%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'settings'%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToShow'%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520'slidesToScroll'%253A%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%255D"
           style="width:1024px; height:630px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
         </iframe>
+        <hr />
+      </section>
+      <section class="js-section">
+        <h3 class="section__title">Side Bar</h3>
+        <p>A collapsible side bar for your dashboard, with icons from Font Awesome</p>
+        <div class="gif-example">
+          <img src="./images/sidebar.gif" />
+        </div>
+        <p>
+          <i><b>! </b> This component uses Font Awesome Free 5.8.1, you need yo use the icons available on <a
+              href="https://fontawesome.com/icons?d=gallery">Font Awesome Gallery</a> and pass the class of the icon on
+            "icon" argument, just like the example bellow.</i>
+        </p>
+        <p>
+          <i><b>! </b> For using the callbacks like the example bellow, you will need to have installed Pandas
+            library.</i>
+        </p>
+        <p>
+          <i><b>! </b> To have this effect of the content being pushed by the side bar, it is necessary to use
+            <b>id="page_content"</b> in the sidebar sibling Div, like the example bellow.</i>
+        </p>
+
+        <div class="code__block code__block--notabs">
+          <pre class="code code--block">
+            <code>
+              pip install pandas
+            </code>
+          </pre>
+        </div>
+        <br>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C1)&t=dracula&wt=none&l=python&ds=true&dsyoff=59px&dsblur=20px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=4x&wm=false&code=import%2520dash_trich_components%2520as%2520dtc%250Afrom%2520dash.dependencies%2520import%2520Input%252C%2520Output%250Aimport%2520pandas%2520as%2520pd%250A%250Acontent_1%2520%253D%2520html.Div('content%25201')%250Acontent_2%2520%253D%2520html.Div('content%25202')%250Acontent_3%2520%253D%2520html.Div('content%25203')%250Acontent_4%2520%253D%2520html.Div('content%25204')%250Acontent_5%2520%253D%2520html.Div('content%25205')%250A%250Aapp.layout%2520%253D%2520html.Div(%255B%250A%2520%2520%2520%2520dtc.SideBar(%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520dtc.SideBarItem(id%253D'id_1'%252C%2520label%253D%2522Label%25201%2522%252C%2520icon%253D%2522fas%2520fa-home%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520dtc.SideBarItem(id%253D'id_2'%252C%2520label%253D%2522Label%25202%2522%252C%2520icon%253D%2522fas%2520fa-chart-line%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520dtc.SideBarItem(id%253D'id_3'%252C%2520label%253D%2522Label%25203%2522%252C%2520icon%253D%2522far%2520fa-list-alt%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520dtc.SideBarItem(id%253D'id_4'%252C%2520label%253D%2522Label%25204%2522%252C%2520icon%253D%2522fas%2520fa-info-circle%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520dtc.SideBarItem(id%253D'id_5'%252C%2520label%253D%2522Label%25205%2522%252C%2520icon%253D%2522fas%2520fa-cog%2522)%252C%250A%2520%2520%2520%2520%255D)%252C%250A%2520%2520%2520%2520html.Div(id%253D%2522page_content%2522)%250A%255D)%250A%250A%2540app.callback(%250A%2520%2520%2520%2520Output(%2522page_content%2522%252C%2520%2522children%2522)%252C%250A%2520%2520%2520%2520%255B%250A%2520%2520%2520%2520%2520%2520%2520%2520Input(%2522id_1%2522%252C%2520%2522n_clicks_timestamp%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520Input(%2522id_2%2522%252C%2520%2522n_clicks_timestamp%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520Input(%2522id_3%2522%252C%2520%2522n_clicks_timestamp%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520Input(%2522id_4%2522%252C%2520%2522n_clicks_timestamp%2522)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520Input(%2522id_5%2522%252C%2520%2522n_clicks_timestamp%2522)%250A%2520%2520%2520%2520%255D%250A)%250A%250Adef%2520toggle_collapse(input1%252C%2520input2%252C%2520input3%252C%2520input4%252C%2520input5)%253A%250A%2520%2520%2520%2520btn_df%2520%253D%2520pd.DataFrame(%257B%2522input1%2522%253A%2520%255Binput1%255D%252C%2520%2522input2%2522%253A%2520%255Binput2%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522input3%2522%253A%2520%255Binput3%255D%252C%2520%2522input4%2522%253A%2520%255Binput4%255D%252C%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522input5%2522%253A%2520%255Binput5%255D%257D)%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520btn_df%2520%253D%2520btn_df.fillna(0)%250A%250A%2520%2520%2520%2520if%2520btn_df.idxmax(axis%253D1).values%2520%253D%253D%2520%2522input1%2522%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520content_1%250A%2520%2520%2520%2520if%2520btn_df.idxmax(axis%253D1).values%2520%253D%253D%2520%2522input2%2522%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520content_2%250A%2520%2520%2520%2520if%2520btn_df.idxmax(axis%253D1).values%2520%253D%253D%2520%2522input3%2522%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520content_3%250A%2520%2520%2520%2520if%2520btn_df.idxmax(axis%253D1).values%2520%253D%253D%2520%2522input4%2522%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520content_4%250A%2520%2520%2520%2520if%2520btn_df.idxmax(axis%253D1).values%2520%253D%253D%2520%2522input5%2522%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520content_5"
+          style=" width:1024px; height:1240px; border:0; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <h4>SideBar</h4>
+        <table id="customers">
+          <tr>
+            <th>Argument</th>
+            <th>Value</th>
+            <th>Default</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>(<b>string</b>, optional): <i>id of the element</i></td>
+            <td>Null</td>
+          </tr>
+          <tr>
+            <td>bg_color</td>
+            <td>(<b>string</b>, optional): <i>color of sidebar background</i></td>
+            <td>'#DB3D44'</td>
+          </tr>
+          <tr>
+            <td>text_color</td>
+            <td>(<b>string</b>, optional): <i>color of sidebar text</i></td>
+            <td>'#FFFFFF'</td>
+          </tr>
+          <tr>
+            <td>className</td>
+            <td>(<b>string</b>, optional): <i>used with CSS to style elements with common properties</i></td>
+            <td>''</td>
+          </tr>
+        </table>
+        <h4>SideBarItem</h4>
+        <table id="customers">
+          <tr>
+            <th>Argument</th>
+            <th>Value</th>
+            <th>Default</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>(<b>string</b>, optional): <i>id of the element</i></td>
+            <td>Null</td>
+          </tr>
+          <tr>
+            <td>label</td>
+            <td>(<b>string</b>, optional): <i>text of menu item on sidebar</i></td>
+            <td>Null</td>
+          </tr>
+          <tr>
+            <td>icon</td>
+            <td>(<b>string</b>, optional): <i>icon of menu item on sidebar, pass the icon class from font awesome</i>
+            </td>
+            <td>Null</td>
+          </tr>
+          <tr>
+            <td>className</td>
+            <td>(<b>string</b>, optional): <i>used with CSS to style elements with common properties</i></td>
+            <td>''</td>
+          </tr>
+        </table>
         <hr />
       </section>
       <section class="js-section">

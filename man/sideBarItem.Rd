@@ -10,12 +10,14 @@
 }
 
 \usage{
-sideBarItem(id=NULL, label=NULL, icon=NULL, disabled=NULL,
-n_clicks=NULL, n_clicks_timestamp=NULL)
+sideBarItem(id=NULL, className=NULL, label=NULL, icon=NULL,
+disabled=NULL, n_clicks=NULL, n_clicks_timestamp=NULL)
 }
 
 \arguments{
 \item{id}{Character. Id of the element}
+
+\item{className}{Character. Style class of the component.}
 
 \item{label}{Character. Text of menu item on sidebar}
 

@@ -59,9 +59,9 @@ app.layout = html.Div([
         dtc.SideBarItem(id='id_3', label="Text 3"),
         dtc.SideBarItem(id='id_4', label="Text 4"),
         dtc.SideBarItem(id='id_5', label="Text 5"),
-    ], className="testeee", id="sidebar"),
+    ], className="testeee", id="sidebar", bg_color="blue"),
     html.Div([
-    ], id="homepage"),
+    ], id="page_content"),
     # html.Div([
     #     dtc.Carousel(
     #         content,
@@ -85,7 +85,7 @@ app.layout = html.Div([
 
 
 @app.callback(
-    Output("homepage", "children"),
+    Output("page_content", "children"),
     [
         Input("id_1", "n_clicks_timestamp"),
         Input("id_2", "n_clicks_timestamp"),

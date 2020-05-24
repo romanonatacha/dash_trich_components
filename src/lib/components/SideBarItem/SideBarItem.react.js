@@ -24,6 +24,7 @@ export default class SideBarItem extends Component {
 
         const {
             id,
+            className,
             label,
             icon,
             setProps,
@@ -32,6 +33,7 @@ export default class SideBarItem extends Component {
 
         return (
             <NavItem
+                className={className}
                 onClick={this.incrementClicks}
                 {...otherProps}
                 eventKey={id}
@@ -50,6 +52,7 @@ export default class SideBarItem extends Component {
 
 SideBarItem.defaultProps = {
     id: null,
+    className: '',
     label: null,
     icon: null,
     disabled: false,
@@ -62,6 +65,11 @@ SideBarItem.propTypes = {
      * Id of the element
      */
     id: PropTypes.string,
+
+    /**
+     * Style class of the component.
+     */
+    className: PropTypes.string,
 
     /**
      * Text of menu item on sidebar

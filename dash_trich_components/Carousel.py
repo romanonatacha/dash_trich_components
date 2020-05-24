@@ -5,7 +5,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 class Carousel(Component):
     """A Carousel component.
-ECarousel is an carousel component.
+Carousel is an carousel component.
 It takes some setting properties
 You put how many blocks of divs you want inside it,
 and this div turn into slides
