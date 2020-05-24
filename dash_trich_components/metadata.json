@@ -1,4 +1,121 @@
 {
+  "src/lib/components/Card/Card.react.js": {
+    "description": "A simple card with an image, title, description,\nbadges and link for github with icon, all this arguments are optional.",
+    "displayName": "Card",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "link": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "link to redirect when the user clicks on the image",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "image": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "image that will display on card",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "title of the card",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "description": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "description of the card",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "badges": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "list of strings to display in badges, to work porperly put up to 4 or 5",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "git": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "github URL, is not required, only if you want to",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "dark": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "theme color of the card, that for default is light",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Carousel/Carousel.react.js": {
     "description": "Carousel is an carousel component.\nIt takes some setting properties\nYou put how many blocks of divs you want inside it,\nand this div turn into slides",
     "displayName": "Carousel",
@@ -126,7 +243,7 @@
     }
   },
   "src/lib/components/SideBar/SideBar.react.js": {
-    "description": "",
+    "description": "A collapsible side bar for your dashboard,\nwith icons from Font Awesome",
     "displayName": "SideBar",
     "methods": [],
     "props": {
@@ -159,7 +276,7 @@
         "required": false,
         "description": "Color of sidebar background",
         "defaultValue": {
-          "value": "'inherit'",
+          "value": "'#2b7279'",
           "computed": false
         }
       },
@@ -170,7 +287,7 @@
         "required": false,
         "description": "Color of sidebar text",
         "defaultValue": {
-          "value": "'inherit'",
+          "value": "'#ffffff'",
           "computed": false
         }
       },
@@ -184,7 +301,7 @@
     }
   },
   "src/lib/components/SideBarItem/SideBarItem.react.js": {
-    "description": "",
+    "description": "Side bar items, to be used inside of sidebar component",
     "displayName": "SideBarItem",
     "methods": [
       {
@@ -225,7 +342,7 @@
         "required": false,
         "description": "Text of menu item on sidebar",
         "defaultValue": {
-          "value": "null",
+          "value": "'Label'",
           "computed": false
         }
       },
@@ -236,7 +353,7 @@
         "required": false,
         "description": "Icon of menu item on sidebar, pass the icon class from font awesome",
         "defaultValue": {
-          "value": "null",
+          "value": "'fas fa-circle'",
           "computed": false
         }
       },
@@ -283,7 +400,7 @@
     }
   },
   "src/lib/components/ThemeToggle/ThemeToggle.react.js": {
-    "description": "",
+    "description": "Dark/Light theme toggle switch for your Dash project.",
     "displayName": "ThemeToggle",
     "methods": [
       {

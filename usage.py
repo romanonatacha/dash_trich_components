@@ -61,26 +61,35 @@ app.layout = html.Div([
         dtc.SideBarItem(id='id_5', label="Text 5"),
     ], className="testeee", id="sidebar", bg_color="blue"),
     html.Div([
-    ], id="page_content"),
-    # html.Div([
-    #     dtc.Carousel(
-    #         content,
-    #         dots=False,
-    #         arrows=True,
-    #         infinite=True,
-    #         speed=500,
-    #         slides_to_show=3,
-    #         slides_to_scroll=1,
-    #         responsive=responsive,
-    #     ),
-    #     dtc.ThemeToggle(
-    #         bg_color_dark='red',
-    #         icon_color_dark='blue',
-    #         bg_color_light='pink',
-    #         icon_color_light='green',
-    #         tooltip_text='teeext'
-    #     )
-    # ])
+    ], id="page_content", style={'height': '100vh'}),
+    html.Div([
+        dtc.Carousel(
+            content,
+            dots=False,
+            arrows=True,
+            infinite=True,
+            speed=500,
+            slides_to_show=3,
+            slides_to_scroll=1,
+            responsive=responsive,
+        ),
+        dtc.ThemeToggle(
+            bg_color_dark='red',
+            icon_color_dark='blue',
+            bg_color_light='pink',
+            icon_color_light='green',
+            tooltip_text='teeext'
+        ),
+        dtc.Card(
+            link='link',
+            image='image',
+            title='title',
+            description='description',
+            badges=['oie', 'tchau', 'beijos'],
+            git='git',
+            dark=True
+        )
+    ])
 ], style={'width': '80%', 'margin': '0 auto'})
 
 

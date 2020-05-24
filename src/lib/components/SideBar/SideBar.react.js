@@ -4,6 +4,11 @@ import SideNav from '@trendmicro/react-sidenav';
 import './SideBar.scss'
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
+/**
+ * A collapsible side bar for your dashboard,
+ * with icons from Font Awesome
+ */
+
 export default class SideBar extends Component {
 
     render() {
@@ -37,8 +42,8 @@ export default class SideBar extends Component {
 SideBar.defaultProps = {
     id: null,
     className: '',
-    bg_color: 'inherit',
-    text_color: 'inherit'
+    bg_color: '#2b7279',
+    text_color: '#ffffff'
 };
 
 SideBar.propTypes = {

@@ -1,9 +1,11 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
+export(Card)
 export(Carousel)
 export(SideBar)
 export(SideBarItem)
 export(ThemeToggle)
+export(card)
 export(sideBarItem)
 export(sideBarToggle)
 export(sideBar)

@@ -6,7 +6,7 @@
 \title{SideBarItem component}
 
 \description{
-
+Side bar items, to be used inside of sidebar component
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{ThemeToggle component}
 
 \description{
-
+Dark/Light theme toggle switch for your Dash project.
 }
 
 \usage{

@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
+/**
+ * Side bar items, to be used inside of sidebar component
+ */
+
 export default class SideBarItem extends Component {
 
     constructor(props) {
@@ -53,8 +57,8 @@ export default class SideBarItem extends Component {
 SideBarItem.defaultProps = {
     id: null,
     className: '',
-    label: null,
-    icon: null,
+    label: 'Label',
+    icon: 'fas fa-circle',
     disabled: false,
     n_clicks: 0,
     n_clicks_timestamp: -1

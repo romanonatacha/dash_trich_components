@@ -6,7 +6,7 @@
 \title{SideBar component}
 
 \description{
-
+A collapsible side bar for your dashboard, with icons from Font Awesome
 }
 
 \usage{

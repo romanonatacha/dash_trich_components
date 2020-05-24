@@ -5,7 +5,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 class ThemeToggle(Component):
     """A ThemeToggle component.
-
+Dark/Light theme toggle switch for your Dash project.
 
 Keyword arguments:
 - bg_color_dark (string; default '#232323'): Background color of toggle switch when dark theme

@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import './ThemeToggle.scss'
 import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
+/**
+ * Dark/Light theme toggle switch for your Dash project.
+ */
 
 export default class ThemeToggle extends Component {
 

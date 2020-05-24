@@ -5,13 +5,13 @@ from dash.development.base_component import Component, _explicitize_args
 
 class SideBarItem(Component):
     """A SideBarItem component.
-
+Side bar items, to be used inside of sidebar component
 
 Keyword arguments:
 - id (string; optional): Id of the element
 - className (string; default ''): Style class of the component.
-- label (string; optional): Text of menu item on sidebar
-- icon (string; optional): Icon of menu item on sidebar, pass the icon class from font awesome
+- label (string; default 'Label'): Text of menu item on sidebar
+- icon (string; default 'fas fa-circle'): Icon of menu item on sidebar, pass the icon class from font awesome
 - disabled (boolean; default False): Disable the link. Default: False.
 - n_clicks (number; default 0): An integer that represents the number of times
 that this element has been clicked on.

@@ -1,0 +1,159 @@
+.trich_card {
+
+    .card {
+        height: 100%;
+        border: none;
+        
+        &:focus {
+            outline: none;
+        }
+
+        .badge {
+            text-transform: capitalize;
+        }
+    }
+    
+    .padding16 {
+        padding: 16px;
+    }
+    
+    .radius8 {
+        border-radius: 8px;
+    } 
+    
+    .bottom16 {
+        margin-bottom: 16px;
+    }
+    
+    .font-sm {
+        font-size: 16px;
+    }
+    .font-xs {
+        font-size: 14px;
+    }
+    
+    .bold {
+        font-weight: 700;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    .flex_row_btw {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .self_center {
+        align-self: center;
+    }
+
+    &.light {
+        .card {
+            background-color: #f5f5f5;
+            color: #333333;
+
+            .badge {
+                background-color: #2b7178;
+                color: #fff;
+            }
+
+            .git {
+                color: #c75146;
+            }
+        }
+    }
+
+    &.dark {
+        .card {
+            background-color: #333333;
+            color: #fff;
+
+            .badge {
+                background-color: #77aeb2;
+                color: #333333;
+            }
+
+            .git {
+                color: #dc7d75;
+            }
+        }
+    }
+}
+
+ /* media queries */
+    
+ @media only screen and (min-width: 576px) {
+    
+    .trich_card_text {
+        height: calc(100% - 190px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .trich_card {
+        .card {
+            min-width: 332px;
+            max-width: 332px;
+            height: 100%;
+    
+            .trich_card_img {
+                height: 200px;
+                
+                img {
+                    width: 100%;
+                    
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            .trich_card_text {
+                height: calc(100% - 252px);
+            }
+          
+            .trich_card_footer {
+                height: 24px;
+            }
+    
+        }
+
+        &.light {
+            .card:hover {
+                filter: drop-shadow(2px 4px 6px rgb(143, 143, 143));
+            }
+        }
+        
+        &.dark {
+            .card:hover {
+                filter: drop-shadow(2px 4px 6px black);
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    .trich_card {
+
+        .trich_card_footer {
+            height: 24px;
+        }
+    
+        .trich_card_img img {
+            width: 100%;
+        }
+    }
+
+    
+}
