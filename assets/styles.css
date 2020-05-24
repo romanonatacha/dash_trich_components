@@ -1,0 +1,9 @@
+.sidenav---expanded---1KdUL ~ #homepage {
+    margin-left: 240px;
+    transition: 0.5s;
+}
+
+.sidenav---collapsed---LQDEv ~ #homepage {
+    margin-left: 64px;
+    transition: 0.5s;
+}

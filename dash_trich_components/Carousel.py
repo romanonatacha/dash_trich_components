@@ -26,14 +26,15 @@ Keyword arguments:
 - responsive (list; optional): Settings of breakpoints
 - vertical (boolean; optional): If your carousel is vertical
 - style (dict; optional): Inline style of the component.
-- className (string; optional): Style class of the component."""
+- className (string; optional): Style class of the component.
+- id (string; optional): Id of the element"""
     @_explicitize_args
-    def __init__(self, children=None, dots=Component.UNDEFINED, arrows=Component.UNDEFINED, infinite=Component.UNDEFINED, autoplay=Component.UNDEFINED, speed=Component.UNDEFINED, slides_to_show=Component.UNDEFINED, slides_to_scroll=Component.UNDEFINED, center_mode=Component.UNDEFINED, center_padding=Component.UNDEFINED, swipe_to_slide=Component.UNDEFINED, variable_width=Component.UNDEFINED, responsive=Component.UNDEFINED, vertical=Component.UNDEFINED, style=Component.UNDEFINED, className=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slides_to_show', 'slides_to_scroll', 'center_mode', 'center_padding', 'swipe_to_slide', 'variable_width', 'responsive', 'vertical', 'style', 'className']
+    def __init__(self, children=None, dots=Component.UNDEFINED, arrows=Component.UNDEFINED, infinite=Component.UNDEFINED, autoplay=Component.UNDEFINED, speed=Component.UNDEFINED, slides_to_show=Component.UNDEFINED, slides_to_scroll=Component.UNDEFINED, center_mode=Component.UNDEFINED, center_padding=Component.UNDEFINED, swipe_to_slide=Component.UNDEFINED, variable_width=Component.UNDEFINED, responsive=Component.UNDEFINED, vertical=Component.UNDEFINED, style=Component.UNDEFINED, className=Component.UNDEFINED, id=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slides_to_show', 'slides_to_scroll', 'center_mode', 'center_padding', 'swipe_to_slide', 'variable_width', 'responsive', 'vertical', 'style', 'className', 'id']
         self._type = 'Carousel'
         self._namespace = 'dash_trich_components'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slides_to_show', 'slides_to_scroll', 'center_mode', 'center_padding', 'swipe_to_slide', 'variable_width', 'responsive', 'vertical', 'style', 'className']
+        self.available_properties = ['children', 'dots', 'arrows', 'infinite', 'autoplay', 'speed', 'slides_to_show', 'slides_to_scroll', 'center_mode', 'center_padding', 'swipe_to_slide', 'variable_width', 'responsive', 'vertical', 'style', 'className', 'id']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

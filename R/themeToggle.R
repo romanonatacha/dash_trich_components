@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-themeToggle <- function(bg_color_dark=NULL, icon_color_dark=NULL, bg_color_light=NULL, icon_color_light=NULL, tooltip_text=NULL) {
+themeToggle <- function(bg_color_dark=NULL, icon_color_dark=NULL, bg_color_light=NULL, icon_color_light=NULL, tooltip_text=NULL, style=NULL, className=NULL, id=NULL) {
     
-    props <- list(bg_color_dark=bg_color_dark, icon_color_dark=icon_color_dark, bg_color_light=bg_color_light, icon_color_light=icon_color_light, tooltip_text=tooltip_text)
+    props <- list(bg_color_dark=bg_color_dark, icon_color_dark=icon_color_dark, bg_color_light=bg_color_light, icon_color_light=icon_color_light, tooltip_text=tooltip_text, style=style, className=className, id=id)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ themeToggle <- function(bg_color_dark=NULL, icon_color_dark=NULL, bg_color_light
         props = props,
         type = 'ThemeToggle',
         namespace = 'dash_trich_components',
-        propNames = c('bg_color_dark', 'icon_color_dark', 'bg_color_light', 'icon_color_light', 'tooltip_text'),
+        propNames = c('bg_color_dark', 'icon_color_dark', 'bg_color_light', 'icon_color_light', 'tooltip_text', 'style', 'className', 'id'),
         package = 'dashTrichComponents'
         )
 

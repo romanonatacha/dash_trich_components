@@ -15,7 +15,7 @@ autoplay=NULL, speed=NULL, slides_to_show=NULL,
 slides_to_scroll=NULL, center_mode=NULL,
 center_padding=NULL, swipe_to_slide=NULL,
 variable_width=NULL, responsive=NULL, vertical=NULL,
-style=NULL, className=NULL)
+style=NULL, className=NULL, id=NULL)
 }
 
 \arguments{
@@ -50,6 +50,8 @@ style=NULL, className=NULL)
 \item{style}{Named list. Inline style of the component.}
 
 \item{className}{Character. Style class of the component.}
+
+\item{id}{Character. Id of the element}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

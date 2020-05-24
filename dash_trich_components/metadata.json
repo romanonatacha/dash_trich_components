@@ -115,6 +115,170 @@
         },
         "required": false,
         "description": "Style class of the component."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element"
+      }
+    }
+  },
+  "src/lib/components/SideBar/SideBar.react.js": {
+    "description": "",
+    "displayName": "SideBar",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "bg_color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of sidebar background",
+        "defaultValue": {
+          "value": "'inherit'",
+          "computed": false
+        }
+      },
+      "text_color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of sidebar text",
+        "defaultValue": {
+          "value": "'inherit'",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Your carousel is vertical"
+      }
+    }
+  },
+  "src/lib/components/SideBarItem/SideBarItem.react.js": {
+    "description": "",
+    "displayName": "SideBarItem",
+    "methods": [
+      {
+        "name": "incrementClicks",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text of menu item on sidebar",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "icon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Icon of menu item on sidebar, pass the icon class from font awesome",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Disable the link. Default: False.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "n_clicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_timestamp": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "An integer that represents the time (in ms since 1970)\nat which n_clicks changed. This can be used to tell\nwhich button was changed most recently.",
+        "defaultValue": {
+          "value": "-1",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\nproperties change"
       }
     }
   },
@@ -141,35 +305,88 @@
           "name": "string"
         },
         "required": false,
-        "description": "Background color of toggle switch when dark theme"
+        "description": "Background color of toggle switch when dark theme",
+        "defaultValue": {
+          "value": "'#232323'",
+          "computed": false
+        }
       },
       "icon_color_dark": {
         "type": {
           "name": "string"
         },
         "required": false,
-        "description": "Sun icon color of toggle switch when dark theme"
+        "description": "Sun icon color of toggle switch when dark theme",
+        "defaultValue": {
+          "value": "'#EDC575'",
+          "computed": false
+        }
       },
       "bg_color_light": {
         "type": {
           "name": "string"
         },
         "required": false,
-        "description": "Background color of toggle switch when light theme"
+        "description": "Background color of toggle switch when light theme",
+        "defaultValue": {
+          "value": "'#07484E'",
+          "computed": false
+        }
       },
       "icon_color_light": {
         "type": {
           "name": "string"
         },
         "required": false,
-        "description": "Moon icon color of toggle switch when dark theme"
+        "description": "Moon icon color of toggle switch when dark theme",
+        "defaultValue": {
+          "value": "'#c8dbdc'",
+          "computed": false
+        }
       },
       "tooltip_text": {
         "type": {
           "name": "string"
         },
         "required": false,
-        "description": "Text that will appear in tooltip (only desktop)"
+        "description": "Text that will appear in tooltip (only desktop)",
+        "defaultValue": {
+          "value": "'Toggle light/dark theme'",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
       }
     }
   }

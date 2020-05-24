@@ -30,13 +30,16 @@ export default class ThemeToggle extends Component {
             icon_color_dark,
             bg_color_light,
             icon_color_light,
-            tooltip_text
+            tooltip_text,
+            className,
+            id,
+            style
         } = this.props
 
         const { checked } = this.state
 
-        let background = checked ? bg_color_dark || '#232323' : bg_color_light || '#07484E';
-        let color = checked ? icon_color_dark || '#EDC575' : icon_color_light || '#c8dbdc'
+        let background = checked ? bg_color_dark : bg_color_light
+        let color = checked ? icon_color_dark : icon_color_light
 
         const Label = styled.label`
             background: ${background};
@@ -44,10 +47,10 @@ export default class ThemeToggle extends Component {
         `
 
         return (
-            <div className="themeToggle">
+            <div className={`${className} themeToggle`} id={id} style={style}>
                 <OverlayTrigger placement='bottom' delay={{ show: 1000 }} overlay={
                     <Tooltip id="tooltip-bottom">
-                        {tooltip_text || 'Toggle light/dark theme'}
+                        {tooltip_text}
                     </Tooltip>
                 }>
                     <form>
@@ -61,7 +64,16 @@ export default class ThemeToggle extends Component {
     }
 }
 
-ThemeToggle.defaultProps = {};
+ThemeToggle.defaultProps = {
+    bg_color_dark: '#232323',
+    icon_color_dark: '#EDC575',
+    bg_color_light: '#07484E',
+    icon_color_light: '#c8dbdc',
+    tooltip_text: 'Toggle light/dark theme',
+    className: '',
+    style: null,
+    id: null
+};
 
 ThemeToggle.propTypes = {
     /**
@@ -87,5 +99,19 @@ ThemeToggle.propTypes = {
     /**
      * Text that will appear in tooltip (only desktop)
      */
-    tooltip_text: PropTypes.string
+    tooltip_text: PropTypes.string,
+
+    /**
+     * Inline style of the component.
+     */
+    style: PropTypes.object,
+    /**
+     * Style class of the component.
+     */
+    className: PropTypes.string,
+
+    /**
+     * Id of the element
+     */
+    id: PropTypes.string
 };

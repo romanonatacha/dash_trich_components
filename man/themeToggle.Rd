@@ -12,7 +12,7 @@
 \usage{
 themeToggle(bg_color_dark=NULL, icon_color_dark=NULL,
 bg_color_light=NULL, icon_color_light=NULL,
-tooltip_text=NULL)
+tooltip_text=NULL, style=NULL, className=NULL, id=NULL)
 }
 
 \arguments{
@@ -25,6 +25,12 @@ tooltip_text=NULL)
 \item{icon_color_light}{Character. Moon icon color of toggle switch when dark theme}
 
 \item{tooltip_text}{Character. Text that will appear in tooltip (only desktop)}
+
+\item{style}{Named list. Inline style of the component.}
+
+\item{className}{Character. Style class of the component.}
+
+\item{id}{Character. Id of the element}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

@@ -29,6 +29,7 @@ export default class Carousel extends Component {
             vertical,
             className,
             style,
+            id,
             children } = this.props
 
         const settings = {
@@ -45,12 +46,11 @@ export default class Carousel extends Component {
             variableWidth: variable_width || false,
             responsive: responsive || null,
             vertical: vertical || false,
-            className: className || null,
-            style: style || null
+
         };
 
         return (
-            <div id="trich_carousel">
+            <div className={`${className} trich_carousel`} id={id} style={style}>
                 <Slider {...settings}>
                     {children}
                 </Slider>
@@ -59,7 +59,8 @@ export default class Carousel extends Component {
     }
 }
 
-Carousel.defaultProps = {};
+Carousel.defaultProps = {
+};
 
 Carousel.propTypes = {
     /**
@@ -136,8 +137,14 @@ Carousel.propTypes = {
      * Inline style of the component.
      */
     style: PropTypes.object,
+
     /**
      * Style class of the component.
      */
     className: PropTypes.string,
+
+    /**
+     * Id of the element
+     */
+    id: PropTypes.string,
 };

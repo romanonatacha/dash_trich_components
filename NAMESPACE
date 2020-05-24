@@ -1,6 +1,11 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 export(Carousel)
+export(SideBar)
+export(SideBarItem)
 export(ThemeToggle)
+export(sideBarItem)
+export(sideBarToggle)
+export(sideBar)
 export(themeToggle)
 export(carousel)
