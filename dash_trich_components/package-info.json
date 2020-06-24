@@ -1,6 +1,6 @@
 {
   "name": "dash_trich_components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Trich.ai components library for Dash Plotly",
   "repository": {
     "type": "git",
