@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 
 import { Carousel } from '../lib';
+import GridLayoutComponent from '../lib/components/GridLayoutComponent/GridLayoutComponent.react';
 
 class App extends Component {
 
@@ -20,10 +21,16 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Carousel
-                    setProps={this.setProps}
-                    {...this.state}
-                />
+                <GridLayoutComponent>
+                <div>teste</div>
+                <div>teste</div>
+                <div>teste</div>
+                <div>teste</div>
+                <div>teste</div>
+                <div>teste</div>
+                <div>teste</div>
+                <div>teste</div>
+                </GridLayoutComponent>
             </div>
         )
     }

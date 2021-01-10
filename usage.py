@@ -89,7 +89,15 @@ app.layout = html.Div([
             git='git',
             dark=True
         )
-    ])
+    ]),
+    dtc.GridLayoutComponent(
+        children=[
+        html.Div('teste', style={"background":"lightgrey"}),
+        html.Div('teste'),
+        html.Div('teste'),
+        html.Div('teste'),
+        html.Div('teste')
+    ], style={"background":"blue", "margin":"50px"}),
 ], style={'width': '80%', 'margin': '0 auto'})
 
 

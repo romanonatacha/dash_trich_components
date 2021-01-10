@@ -242,6 +242,48 @@
       }
     }
   },
+  "src/lib/components/GridLayoutComponent/GridLayoutComponent.react.js": {
+    "description": "GridLayout is an GridLayout component.\nIt takes some setting properties\nYou put how many blocks of divs you want inside it,\nand this div turn into slides",
+    "displayName": "GridLayoutComponent",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Your GridLayout is vertical"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element"
+      },
+      "layout": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Initial layout"
+      }
+    }
+  },
   "src/lib/components/SideBar/SideBar.react.js": {
     "description": "A collapsible side bar for your dashboard,\nwith icons from Font Awesome",
     "displayName": "SideBar",

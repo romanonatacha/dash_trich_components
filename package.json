@@ -33,6 +33,7 @@
     "node-sass": "^4.14.1",
     "ramda": "^0.26.1",
     "react-bootstrap": "^1.0.1",
+    "react-grid-layout": "^1.2.0",
     "react-jss": "^10.1.1",
     "react-slick": "^0.26.1",
     "sass-loader": "^8.0.2",
