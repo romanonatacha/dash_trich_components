@@ -60,6 +60,7 @@ export default class Carousel extends Component {
 }
 
 Carousel.defaultProps = {
+    
 };
 
 Carousel.propTypes = {
@@ -146,5 +147,6 @@ Carousel.propTypes = {
     /**
      * Id of the element
      */
-    id: PropTypes.string,
+    id: PropTypes.string
+
 };

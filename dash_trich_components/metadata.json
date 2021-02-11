@@ -242,6 +242,433 @@
       }
     }
   },
+  "src/lib/components/GridLayoutComponent/GridLayoutComponent.react.js": {
+    "description": "GridLayout is an GridLayout component.\nIt takes some setting properties\nYou put how many blocks of divs you want inside it,\nand this div turn into slides",
+    "displayName": "GridLayoutComponent",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Your GridLayout is vertical"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline style of the component."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Style class of the component."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the element"
+      },
+      "layout": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Initial layout"
+      }
+    }
+  },
+  "src/lib/components/ResponsiveGrid/GridItem.react.js": {
+    "description": "A class for displaying an item in a grid\nDesigned to be wrapped in a function, similar to a higher-order component. Otherwise\nthe layout will render incorrectly",
+    "displayName": "GridItem",
+    "methods": [
+      {
+        "name": "relayoutChildren",
+        "docblock": "Iterate over children and trigger a relayout event",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Iterate over children and trigger a relayout event"
+      },
+      {
+        "name": "relayout",
+        "docblock": "Relayout the Plotly objects; modify their sizes to fit inside the columns",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "child"
+          }
+        ],
+        "returns": null,
+        "description": "Relayout the Plotly objects; modify their sizes to fit inside the columns"
+      }
+    ],
+    "props": {
+      "i": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "An identifier for the component.\nSynonymous with `key`, but `key` cannot be specified as\na PropType without causing errors. A caveat to this is that when using\nthe component in pure React (as opposed to via Dash), both `i` and `key`\nmust be specified"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "A list of child elements to place inside the grid ite,"
+      },
+      "layout": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "x": {
+              "name": "number",
+              "description": "The x-value of the element location, in grid units",
+              "required": true
+            },
+            "y": {
+              "name": "number",
+              "description": "The y-value of the element location, in grid units",
+              "required": true
+            },
+            "w": {
+              "name": "number",
+              "description": "The width of the element, in grid units",
+              "required": true
+            },
+            "h": {
+              "name": "number",
+              "description": "The height of the element, in grid units",
+              "required": true
+            },
+            "minW": {
+              "name": "number",
+              "description": "The minimum width of the element, in grid units",
+              "required": false
+            },
+            "maxW": {
+              "name": "number",
+              "description": "The maximum width of the element, in grid units",
+              "required": false
+            },
+            "minH": {
+              "name": "number",
+              "description": "The minimum height of the element, in grid units",
+              "required": false
+            },
+            "maxH": {
+              "name": "number",
+              "description": "The maximum height of the element, in grid units",
+              "required": false
+            },
+            "static": {
+              "name": "bool",
+              "description": "Is static: if true, the element is not resizable or draggable",
+              "required": false
+            },
+            "isDraggable": {
+              "name": "bool",
+              "description": "If false, element can not be dragged",
+              "required": false
+            },
+            "isResizable": {
+              "name": "bool",
+              "description": "If false, the element can not be resized",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "An object describing the layout of the element"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the properties change"
+      }
+    }
+  },
+  "src/lib/components/ResponsiveGrid/ResponsiveGrid.react.js": {
+    "description": "This component is an update of an another component build by Alexander Cabello\n\nThe Link to the original component is: https://github.com/AlgorithmHub/dash-responsive-grid-layout\n\nIt allows the user to drag, resize and modify the components inside of it. \nTo be able to run it, you need to add a layout(one definition to each breakpoint) and a div with the ID (key) that will be mapped as the box inside of the Draggable Component.",
+    "displayName": "ResponsiveGrid",
+    "methods": [
+      {
+        "name": "onLayoutChange",
+        "docblock": "Callback for the onLayoutChange",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "layout"
+          },
+          {
+            "name": "layouts"
+          }
+        ],
+        "returns": null,
+        "description": "Callback for the onLayoutChange"
+      },
+      {
+        "name": "onBreakpointChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "breakpoint",
+            "type": null
+          },
+          {
+            "name": "cols",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify the component in Dash callbacks"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "A list of renderable child elements, that will be placed inside the grid"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the properties change"
+      },
+      "breakpoint": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "breakpoints": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "cols": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "layouts": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onBreakpointChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onLayoutChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onWidthChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "rowHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The height, in pixels of a row in the grid"
+      },
+      "maxRows": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Total Rows that can the board have based on the cumulated sum of all rows"
+      },
+      "autoSize": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, containers will automatically resize to fit the content"
+      },
+      "draggableCancel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS selector for tags that will not be draggable. Requires a leading '.'"
+      },
+      "draggableHandle": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS selector for tags that will act as the draggable handle. Requires a leading '.'"
+      },
+      "verticalCompact": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the layout will compact vertically"
+      },
+      "compactType": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'vertical'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Compaction type.\nOne of 'vertical' and 'horizontal'"
+      },
+      "margin": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Margin between items [x, y] in px"
+      },
+      "containerPadding": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Padding inside the container [x, y] in px"
+      },
+      "isDraggable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Elements can be dragged"
+      },
+      "isResizable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Elements can be resized"
+      },
+      "useCSSTransforms": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Use CSS transforms instead of Position. Improves performance if switched on"
+      },
+      "preventCollision": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, grid items won't change position when being\ndragged over"
+      },
+      "onDragStart": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback when dragging is started"
+      },
+      "onDrag": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback upon each drag movement"
+      },
+      "onDragStop": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback upon drag completion"
+      },
+      "onResizeStart": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Calls when resize starts"
+      },
+      "onResize": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Calls when resize movement happens"
+      },
+      "onResizeStop": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Calls when resize is complete"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Set the ClassName to the component"
+      }
+    }
+  },
   "src/lib/components/SideBar/SideBar.react.js": {
     "description": "A collapsible side bar for your dashboard,\nwith icons from Font Awesome",
     "displayName": "SideBar",
