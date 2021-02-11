@@ -5,6 +5,8 @@ import SideBar from './components/SideBar/SideBar.react';
 import SideBarItem from './components/SideBarItem/SideBarItem.react';
 import Card from './components/Card/Card.react';
 import GridLayoutComponent from './components/GridLayoutComponent/GridLayoutComponent.react';
+import ResponsiveGrid from './components/ResponsiveGrid/ResponsiveGrid.react';
+import GridItem from './components/ResponsiveGrid/ResponsiveGrid.react';
 
 export {
     Carousel,
@@ -12,5 +14,7 @@ export {
     SideBar,
     SideBarItem,
     Card,
-    GridLayoutComponent
+    GridLayoutComponent,
+    ResponsiveGrid,
+    GridItem
 };

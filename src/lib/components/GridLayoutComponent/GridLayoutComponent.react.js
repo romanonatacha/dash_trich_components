@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import 'react-grid-layout/css/styles.css'
 import 'react-resizable/css/styles.css'
 import GridLayout from 'react-grid-layout';
+import './GridLayout.scss'
 
 /**
  * GridLayout is an GridLayout component.
@@ -12,23 +13,34 @@ import GridLayout from 'react-grid-layout';
  */
 
 export default class GridLayoutComponent extends Component {
+    
     render() {
 
-        const { style, className, children, id, layout } = this.props;
+        const { style, className, children, id, layout, total_cols, row_height, width, background_color } = this.props;
+
+        const styles = {
+            maxWidth: width || '100px',
+            backgroundColor: background_color || 'lightgray',
+            margin: '0 auto'
+        }
 
         return (
-            <GridLayout id={id} className={`${className} layout`} style={style} layout={layout} cols={12} rowHeight={30} width={1200}>
+            <GridLayout id={id} className={`${className}`} style={style} layout={layout} cols={total_cols || 12} rowHeight={row_height || 75} width={width || 1400}>
+
                 {children.map((child, i) => (
-                    <div key={i + 1}>
+                    <div data-grid={{ x: 0, y: 0, w: 4, h: 4, maxW: 12, maxH: 6, minW: 2, minH: 2, "isDraggable":true, "isResizable":true}} key={i + 1} >
                         {child}
                     </div>
-                ))}
+                ))
+                }
+
             </GridLayout>
         )
     }
 }
 
 GridLayoutComponent.defaultProps = {
+
 };
 
 GridLayoutComponent.propTypes = {
@@ -56,4 +68,5 @@ GridLayoutComponent.propTypes = {
      * Initial layout
      */
     layout: PropTypes.array,
+
 };
