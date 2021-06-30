@@ -228,7 +228,9 @@ app.layout = html.Div([
             description='description',
             badges=['trich', 'dash', 'web-dev'],
             git='git',
-            dark=True
+            dark=True,
+            openNewTab=False,
+            className='myclass'
         )
     ]),
 

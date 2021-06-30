@@ -18,14 +18,15 @@ Keyword arguments:
 - description (string; optional): description of the card
 - badges (list; optional): list of strings to display in badges, to work porperly put up to 4 or 5
 - git (string; optional): github URL, is not required, only if you want to
-- dark (boolean; default False): theme color of the card, that for default is light"""
+- dark (boolean; default False): theme color of the card, that for default is light
+- openNewTab (boolean; default True): Open card link in a new tab"""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, link=Component.UNDEFINED, image=Component.UNDEFINED, title=Component.UNDEFINED, description=Component.UNDEFINED, badges=Component.UNDEFINED, git=Component.UNDEFINED, dark=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'className', 'style', 'link', 'image', 'title', 'description', 'badges', 'git', 'dark']
+    def __init__(self, id=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, link=Component.UNDEFINED, image=Component.UNDEFINED, title=Component.UNDEFINED, description=Component.UNDEFINED, badges=Component.UNDEFINED, git=Component.UNDEFINED, dark=Component.UNDEFINED, openNewTab=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'className', 'style', 'link', 'image', 'title', 'description', 'badges', 'git', 'dark', 'openNewTab']
         self._type = 'Card'
         self._namespace = 'dash_trich_components'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'className', 'style', 'link', 'image', 'title', 'description', 'badges', 'git', 'dark']
+        self.available_properties = ['id', 'className', 'style', 'link', 'image', 'title', 'description', 'badges', 'git', 'dark', 'openNewTab']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

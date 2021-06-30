@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-card <- function(id=NULL, className=NULL, style=NULL, link=NULL, image=NULL, title=NULL, description=NULL, badges=NULL, git=NULL, dark=NULL) {
+card <- function(id=NULL, className=NULL, style=NULL, link=NULL, image=NULL, title=NULL, description=NULL, badges=NULL, git=NULL, dark=NULL, openNewTab=NULL) {
     
-    props <- list(id=id, className=className, style=style, link=link, image=image, title=title, description=description, badges=badges, git=git, dark=dark)
+    props <- list(id=id, className=className, style=style, link=link, image=image, title=title, description=description, badges=badges, git=git, dark=dark, openNewTab=openNewTab)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ card <- function(id=NULL, className=NULL, style=NULL, link=NULL, image=NULL, tit
         props = props,
         type = 'Card',
         namespace = 'dash_trich_components',
-        propNames = c('id', 'className', 'style', 'link', 'image', 'title', 'description', 'badges', 'git', 'dark'),
+        propNames = c('id', 'className', 'style', 'link', 'image', 'title', 'description', 'badges', 'git', 'dark', 'openNewTab'),
         package = 'dashTrichComponents'
         )
 

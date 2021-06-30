@@ -18,6 +18,7 @@ export default class Card extends Component {
             style,
             className,
             link,
+            openNewTab,
             image,
             title,
             description,
@@ -30,7 +31,7 @@ export default class Card extends Component {
             <div id={id} className={`${className} trich_card ${dark ? 'dark' : 'light'}`} style={style}>
                 <div className="padding16 radius8 card">
                     {image &&
-                        <a href={link} target="_blank">
+                        <a href={link} target={openNewTab ? '_blank' : '_self'}>
                             <div className="bottom16 trich_card_img">
                                 <img src={image} alt={title} />
                             </div>
@@ -78,7 +79,8 @@ Card.defaultProps = {
     description: null,
     badges: null,
     git: null,
-    dark: false
+    dark: false,
+    openNewTab: true
 };
 
 Card.propTypes = {
@@ -131,4 +133,9 @@ Card.propTypes = {
      * theme color of the card, that for default is light
      */
     dark: PropTypes.bool,
+
+    /**
+     * Open card link in a new tab
+     */
+     openNewTab: PropTypes.bool,
 };

@@ -12,7 +12,7 @@ A simple card with an image, title, description, badges and link for github with
 \usage{
 card(id=NULL, className=NULL, style=NULL, link=NULL, image=NULL,
 title=NULL, description=NULL, badges=NULL, git=NULL,
-dark=NULL)
+dark=NULL, openNewTab=NULL)
 }
 
 \arguments{
@@ -35,6 +35,8 @@ dark=NULL)
 \item{git}{Character. github URL, is not required, only if you want to}
 
 \item{dark}{Logical. theme color of the card, that for default is light}
+
+\item{openNewTab}{Logical. Open card link in a new tab}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

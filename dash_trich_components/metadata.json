@@ -113,6 +113,17 @@
           "value": "false",
           "computed": false
         }
+      },
+      "openNewTab": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Open card link in a new tab",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
       }
     }
   },
