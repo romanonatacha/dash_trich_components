@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "854f9219fe76b9f327ebd6f20f07d159b0fbe61422131e725141d4d1420e0af5"
+            "sha256": "e1f1e88d2c3013e6e6c49c7e031f71e0a1860149fb8c9b854593b148a3561c9b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -321,11 +321,11 @@
         },
         "jinja2": {
             "hashes": [
-                "sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0",
-                "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
+                "sha256:03e47ad063331dd6a3f04a43eddca8a966a26ba0c5b7207a9a9e4e08f1b29419",
+                "sha256:a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6"
             ],
             "index": "pypi",
-            "version": "==2.11.2"
+            "version": "==2.11.3"
         },
         "keyring": {
             "hashes": [
@@ -441,6 +441,7 @@
                 "sha256:5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5",
                 "sha256:67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"
             ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==20.9"
         },
         "pandas": {
@@ -627,7 +628,6 @@
                 "sha256:b5ec909dde94d4ae2fa26af7c089036997030f0cf0a5cb372b4cccabd81c143b"
             ],
             "index": "pypi",
-            "markers": "sys_platform == 'linux'",
             "version": "==3.1.2"
         },
         "six": {
